@@ -6,7 +6,7 @@ const steps = [
     number: "1",
     title: "Enquire",
     description: "About Courses, Fees, Duration, Career opportunities",
-    image: "",
+    image: "https://www.maacagra.com/img/teacher-explaining-using-gestures.png",
   },
   {
     number: "2",

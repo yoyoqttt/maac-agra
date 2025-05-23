@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import styles from './Hero.module.css';
 import Button from '../common/Button/Button';
-
+// import  backgroundSource from '../Hero/Call of Duty_ Modern Warfare Season 1-6 Animation Showcase.mp4'
 const heroConfig = {
   vrTheme: {
     type: 'image',
-    backgroundSource: '/Main Render(1).jpg',
+    // backgroundSource: '/Main Render(1).jpg',
     titleLines: [
       "3D Animation:",
       "Mastering the art of",
@@ -18,7 +18,7 @@ const heroConfig = {
   },
   dynamicTheme: {
     type: 'video',
-    backgroundSource: 'https://videocdn.cdnpk.net/videos/f2e1ca12-d573-52ac-961b-ecb4fff4c661/horizontal/previews/watermarked/small.mp4 ',
+    backgroundSource: 'https://videocdn.cdnpk.net/videos/9e6481ca-b3ed-5b2e-a6df-b3c02f4b3804/horizontal/previews/watermarked/small.mp4'
      
     
   }

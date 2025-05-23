@@ -6,13 +6,15 @@ const steps = [
     number: "1",
     title: "Enquire",
     description: "About Courses, Fees, Duration, Career opportunities",
-    image: "/images/enquire.png",
+    image: "",
   },
   {
     number: "2",
     title: "Enroll",
     description: "Hurray! You are a student at maac!",
     image: "/images/enroll.png",
+    // import myImage from '../../assets/path-to-your-image.jpg';
+
   },
   {
     number: "3",

@@ -2,6 +2,7 @@
 import React from 'react'; // Not strictly necessary for functional components without state/lifecycle in modern React, but good practice.
 
 // Import Section Components
+import FormPopup from '../components/FormPopup/FormPopup';
 import  HowItWorks from '../components/Howitwork/HowitWork';
 import Hero from '../components/Hero/Hero';
 import AboutSection from '../components/AboutSection/AboutSection';
@@ -15,6 +16,7 @@ import InfoBanner from '../components/InfoBanner/InfoBanner';
 // You can also import the useFadeInScroll hook if you want more granular control
 // over individual section animations rather than relying solely on the global .gsap-fade-in
 // import { useFadeInScroll } from '../hooks/useGsapAnimations';
+ 
 
 const HomePage = () => {
   // Example of using the custom hook for a specific section if desired:
@@ -24,7 +26,7 @@ const HomePage = () => {
   return (
     <>
       {/* Hero Section - Often has its own distinct entrance animation */}
-     
+       {/* <FormPopup />1 */}
       <div className="gsap-fade-in" data-delay="0.1">
         <Hero />
       </div>

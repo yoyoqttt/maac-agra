@@ -7,7 +7,7 @@ const Navbar = ({ onApplyNowClick }) => {
     <nav className={styles.navbar}>
       <div className={`${styles.navContainer} container`}>
         <div className={styles.logo}>
-          <img src={logo} alt="MAAC Agra Logo" />
+        <a href="/"> <img src={logo} alt="MAAC Agra Logo" /></a> 
         </div>
 
         <ul className={styles.navLinks}>

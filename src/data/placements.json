@@ -8,43 +8,32 @@
   {
     "id": "partner-02",
     "name": "MPC",
-    "logo": "/assets/images/placements/mpc-logo.png",
+    "logo": "https://www.maacagra.com/img/recruiters-logo/logo8.webp",
     "website": "https://www.mpcfilm.com/"
   },
   {
     "id": "partner-03",
     "name": "DNEG",
-    "logo": "/assets/images/placements/dneg-logo.png",
+    "logo": "https://www.maacagra.com/img/recruiters-logo/logo9.webp",
     "website": "https://www.dneg.com/"
   },
   {
     "id": "partner-04",
     "name": "Prana Studios",
-    "logo": "/assets/images/placements/prana-logo.png",
+    "logo": "https://www.maacagra.com/img/recruiters-logo/logo13.webp",
     "website": "https://www.pranastudios.com/"
   },
   {
     "id": "partner-05",
     "name": "Netflix",
-    "logo": "/assets/images/placements/netflix-logo.png",
+    "logo": "https://www.maacagra.com/img/recruiters-logo/logo22.webp",
     "website": "https://www.netflix.com/"
   },
   {
     "id": "partner-06",
     "name": "Red Chillies VFX",
-    "logo": "/assets/images/placements/redchillies-logo.png",
+    "logo": "https://www.maacagra.com/img/recruiters-logo/logo5.webp",
     "website": "https://www.redchilliesvfx.com/"
-  },
-  {
-    "id": "partner-07",
-    "name": "Framestore",
-    "logo": "/assets/images/placements/framestore-logo.png",
-    "website": "https://www.framestore.com/"
-  },
-  {
-    "id": "partner-08",
-    "name": "Accenture",
-    "logo": "/assets/images/placements/accenture-logo.png",
-    "website": "https://www.accenture.com/"
   }
+ 
 ]

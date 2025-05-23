@@ -9,14 +9,14 @@ import styles from './PlacementPartners.module.css';
 // import netflixLogo from '../../assets/images/netflix-logo.png';
 // import redChilliesLogo from '../../assets/images/redchillies-logo.png';
 
-const partners = [
-  { name: 'Technicolor', logo: 'https://www.maacagra.com/img/recruiters-logo/logo2.webp' /* Replace with actual import */ },
-  { name: 'MPC', logo: 'https://www.maacagra.com/img/recruiters-logo/logo8.webp' },
-  { name: 'DNEG', logo: 'https://www.maacagra.com/img/recruiters-logo/logo9.webp' },
-  { name: 'Prana Studios (was Z)', logo: 'https://www.maacagra.com/img/recruiters-logo/logo13.webp' /* Adjust if needed */ },
-  { name: 'Netflix', logo: 'https://www.maacagra.com/img/recruiters-logo/logo22.webp' },
-  { name: 'Red Chillies VFX', logo: 'https://www.maacagra.com/img/recruiters-logo/logo5.webp' },
-];
+// const partners = [
+//   { name: 'Technicolor', logo: 'https://www.maacagra.com/img/recruiters-logo/logo2.webp' /* Replace with actual import */ },
+//   { name: 'MPC', logo: 'https://www.maacagra.com/img/recruiters-logo/logo8.webp' },
+//   { name: 'DNEG', logo: 'https://www.maacagra.com/img/recruiters-logo/logo9.webp' },
+//   { name: 'Prana Studios (was Z)', logo: 'https://www.maacagra.com/img/recruiters-logo/logo13.webp' /* Adjust if needed */ },
+//   { name: 'Netflix', logo: 'https://www.maacagra.com/img/recruiters-logo/logo22.webp' },
+//   { name: 'Red Chillies VFX', logo: 'https://www.maacagra.com/img/recruiters-logo/logo5.webp' },
+// ];
 
 const PlacementPartners = () => {
   const sectionRef = useRef(null);

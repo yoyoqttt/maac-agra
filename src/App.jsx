@@ -63,12 +63,12 @@ function App() {
     });
 
     // Example: Open popup after a delay on first visit (uncomment to enable)
-    // const timer = setTimeout(() => {
-    //   if (!sessionStorage.getItem('popupShown')) { // Show only once per session
-    //     setIsPopupOpen(true);
-    //     sessionStorage.setItem('popupShown', 'true');
-    //   }
-    // }, 5000);
+    const timer = setTimeout(() => {
+      if (!sessionStorage.getItem('popupShown')) { // Show only once per session
+        setIsPopupOpen(true);
+        sessionStorage.setItem('popupShown', 'true');
+      }
+    }, 5000);
 
     // Cleanup function for when the App component unmounts
     return () => {

@@ -3,7 +3,7 @@
     "id": "course-anim",
     "name": "3D Animation Pro",
     "shortName": "3D Animation",
-    "image": "https://t3.ftcdn.net/jpg/02/20/56/76/360_F_220567648_yaSmGOL5UJrY8ThiVyjJu9zBKgCddm5S.jpg",
+    "video": "https://videocdn.cdnpk.net/videos/fd04de78-8d76-56fd-8e36-99e0517139ac/horizontal/previews/watermarked/small.mp4",
     "description": "Master the art of bringing characters and stories to life with industry-standard software and techniques.",
     "duration": "18 Months",
     "highlights": [
@@ -18,7 +18,7 @@
     "id": "course-vfx",
     "name": "VFX Prime",
     "shortName": "VFX",
-    "image": "/assets/images/courses/course-vfx.jpg",
+    "video": "https://videocdn.cdnpk.net/videos/f3e308ce-5293-5f46-ad50-4d58a3aeba1b/horizontal/previews/watermarked/small.mp4",
     "description": "Create stunning visual effects for films, television, and games using cutting-edge tools.",
     "duration": "24 Months",
     "highlights": [
@@ -33,7 +33,7 @@
     "id": "course-gaming",
     "name": "Game Design & Development",
     "shortName": "Gaming Design",
-    "image": "/assets/images/courses/course-gaming.jpg",
+    "video": "https://videocdn.cdnpk.net/videos/c2c75a6b-6bfa-5635-8cbd-65e12a191e58/horizontal/previews/watermarked/small.mp4",
     "description": "Design immersive worlds, engaging gameplay, and develop your own interactive games.",
     "duration": "20 Months",
     "highlights": [
@@ -43,12 +43,11 @@
       "Mobile Game Development"
     ],
     "software": ["Unity", "Unreal Engine", "Blender", "Photoshop"]
-  },
-  {
+  }, {
     "id": "course-graphic",
-    "name": "Graphic & Web Design",
+    "name": "web and graphic",
     "shortName": "Graphic Design",
-    "image": "https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=75,format=auto,fit=crop,height=630/uploads/sites/2/2023/02/Tuts_Roundup__Top_Graphic_Design_Courses.jpeg",
+    "video": "https://videocdn.cdnpk.net/videos/66ad5d2b-1782-516a-90ab-a7e6dee26097/horizontal/previews/watermarked/small.mp4",
     "description": "Learn the principles of visual communication and create compelling designs for print and web.",
     "duration": "12 Months",
     "highlights": [
@@ -59,4 +58,5 @@
     ],
     "software": ["Adobe Photoshop", "Adobe Illustrator", "Adobe XD", "Figma"]
   }
+ 
 ]

@@ -118,3 +118,4 @@ dist
 # Vite build output
 dist
 dist-ssr
+/node_modules

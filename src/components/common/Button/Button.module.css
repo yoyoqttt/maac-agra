@@ -1,0 +1,32 @@
+.btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+}
+
+.primary {
+  background-color: var(--primary-yellow);
+  color: var(--dark-text);
+}
+
+.primary:hover {
+  background-color: #e6c300; /* Darker yellow */
+  transform: translateY(-2px);
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--primary-yellow);
+  border: 2px solid var(--primary-yellow);
+}
+
+.secondary:hover {
+  background-color: var(--primary-yellow);
+  color: var(--dark-text);
+  transform: translateY(-2px);
+}

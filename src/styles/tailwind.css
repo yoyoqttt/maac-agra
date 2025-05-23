@@ -1,0 +1,16 @@
+/* src/styles/tailwind.css */
+
+/* Only if you installed and configured Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add custom base styles or component styles here too */
+/* For example:
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+.btn-primary {
+  @apply bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded;
+}
+*/

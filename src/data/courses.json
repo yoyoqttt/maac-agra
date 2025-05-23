@@ -1,0 +1,62 @@
+[
+  {
+    "id": "course-anim",
+    "name": "3D Animation Pro",
+    "shortName": "3D Animation",
+    "image": "https://t3.ftcdn.net/jpg/02/20/56/76/360_F_220567648_yaSmGOL5UJrY8ThiVyjJu9zBKgCddm5S.jpg",
+    "description": "Master the art of bringing characters and stories to life with industry-standard software and techniques.",
+    "duration": "18 Months",
+    "highlights": [
+      "Character Modeling & Texturing",
+      "Rigging & Animation",
+      "Lighting & Rendering",
+      "Portfolio Development"
+    ],
+    "software": ["Autodesk Maya", "ZBrush", "Substance Painter", "Arnold"]
+  },
+  {
+    "id": "course-vfx",
+    "name": "VFX Prime",
+    "shortName": "VFX",
+    "image": "/assets/images/courses/course-vfx.jpg",
+    "description": "Create stunning visual effects for films, television, and games using cutting-edge tools.",
+    "duration": "24 Months",
+    "highlights": [
+      "Compositing & Rotoscoping",
+      "Dynamics & Simulation",
+      "Matchmoving & Tracking",
+      "Green Screen Keying"
+    ],
+    "software": ["Nuke", "Houdini", "After Effects", "Mocha Pro"]
+  },
+  {
+    "id": "course-gaming",
+    "name": "Game Design & Development",
+    "shortName": "Gaming Design",
+    "image": "/assets/images/courses/course-gaming.jpg",
+    "description": "Design immersive worlds, engaging gameplay, and develop your own interactive games.",
+    "duration": "20 Months",
+    "highlights": [
+      "Game Mechanics & Level Design",
+      "3D Asset Creation for Games",
+      "Game Engine Fundamentals (Unity/Unreal)",
+      "Mobile Game Development"
+    ],
+    "software": ["Unity", "Unreal Engine", "Blender", "Photoshop"]
+  },
+  {
+    "id": "course-graphic",
+    "name": "Graphic & Web Design",
+    "shortName": "Graphic Design",
+    "image": "https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=75,format=auto,fit=crop,height=630/uploads/sites/2/2023/02/Tuts_Roundup__Top_Graphic_Design_Courses.jpeg",
+    "description": "Learn the principles of visual communication and create compelling designs for print and web.",
+    "duration": "12 Months",
+    "highlights": [
+      "Branding & Identity Design",
+      "UI/UX Fundamentals",
+      "Responsive Web Design",
+      "Print Design & Layout"
+    ],
+    "software": ["Adobe Photoshop", "Adobe Illustrator", "Adobe XD", "Figma"]
+  }
+]

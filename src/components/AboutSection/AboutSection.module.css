@@ -1,0 +1,187 @@
+/* src/components/AboutSection/AboutSection.module.css */
+
+.aboutCombinedSection {
+  background-color: #2d2d2d; /* Dark textured background - you might use an actual texture image */
+  /* background-image: url('/assets/images/dark-texture-bg.png'); */
+  /* background-repeat: repeat; */
+  color: var(--light-text);
+  padding-top: 60px; /* Padding for the "About MAAC" text */
+  position: relative; /* For positioning the wave */
+  overflow: hidden; /* Prevent unexpected overflows */
+}
+
+.aboutTextContainer {
+  position: relative; /* To ensure it's above the wave's starting point if wave is absolutely positioned */
+  z-index: 2;
+  padding-bottom: 100px; /* Space before the wave visually starts cutting in, adjust this */
+}
+
+.mainTitle { /* "About MAAC" title */
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--primary-yellow);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.aboutContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center; /* As per image, text is centered */
+}
+
+.aboutContent h3 {
+  font-size: 1.5rem; /* "MAAC is the high-end..." */
+  margin-bottom: 25px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.aboutContent p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e0e0e0; /* Slightly lighter text on dark bg */
+  margin-bottom: 20px;
+  text-align: justify; /* Or center if preferred from image */
+}
+
+
+/* --- Wave Separator Styling --- */
+.waveContainer {
+  position: absolute;
+  bottom: 0; /* This will be tricky. The wave needs to separate the dark top from the light bottom where logos are */
+  left: 0;
+  width: 100%;
+  height: 250px; /* Adjust height based on your SVG's aspect ratio and desired visual height */
+  z-index: 1; /* Behind placement content, above dark bg if needed for blending */
+  /* This needs to align with where .placementsSectionWrapper starts */
+  /* This approach is complex. A simpler way is to have the wave as a background of .placementsSectionWrapper */
+  display: flex; /* To make SVG fill */
+  pointer-events: none; /* So it doesn't interfere with mouse events */
+}
+
+/* Styling if wave is an SVG component directly in JSX */
+.waveSvg {
+  width: 100%;
+  height: auto; /* Or fixed height if SVG is designed for it */
+  display: block;
+  /* fill: #f0f0f0; // Control fill from here if not in SVG, or override */
+}
+
+/* --- Placements Section Styling (Now part of AboutCombinedSection) --- */
+.placementsSectionWrapper {
+  background-color: #141414; /* Light background for the logos part, matching the wave's fill */
+  padding-top: 150px; /* SIGNIFICANT PADDING: This needs to be enough for the wave to visually "cut" into the dark section from above */
+                       /* This value is highly dependent on the wave's height and desired overlap */
+  padding-bottom: 60px;
+  position: relative; /* For stacking context if needed */
+  z-index: 0; /* Below the absolutely positioned wave if that's how it's handled */
+
+  /* Alternative for Wave: Use the SVG as a background for this wrapper */
+  /* background-image: url('/assets/images/wave-separator.svg'); */
+  /* background-repeat: no-repeat; */
+  /* background-position: top center; */
+  /* background-size: 100% auto; */ /* Or a fixed height */
+  /* padding-top: 100px; // Adjust this based on the wave's visual height in the background image */
+}
+
+
+.placementsContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Align text and logos vertically */
+  gap: 30px;
+}
+
+.placementsText {
+  flex: 1 1 300px; /* Allow text block to take space and wrap */
+  min-width: 280px;
+  color: var(--light-text); /* Text on the light background */
+}
+
+.placementsTitle { /* "Best Placements companies" */
+  font-size: 2.2rem;
+  color: var(--primary-yellow); /* Yellow color as in image */
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.placementsText p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.partnersGrid {
+  flex: 1.5 1 400px; /* Allow logo grid to take more space */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Adjust minmax for logo size */
+  gap: 20px;
+}
+
+.partnerCard {
+  background-color: #fff; /* White cards for logos */
+  border-radius: var(--border-radius-lg);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px; /* Adjust based on logo aspect ratios */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.partnerCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.partnerCard img {
+  max-width: 100%;
+  max-height: 50px; /* Control logo height */
+  object-fit: contain;
+  filter: grayscale(100%); /* As in the original image, logos are grayscale */
+  opacity: 0.8;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.partnerCard:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.partnerCard span { /* Fallback text if no logo image */
+    color: var(--dark-text);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .mainTitle { font-size: 2.5rem; }
+  .aboutContent h3 { font-size: 1.3rem; }
+  .placementsContent {
+    flex-direction: column;
+    text-align: center; /* Center text content on smaller screens */
+  }
+  .placementsTitle { text-align: center; }
+  .partnersGrid {
+    width: 100%; /* Take full width when stacked */
+  }
+}
+
+@media (max-width: 768px) {
+  .mainTitle { font-size: 2.2rem; }
+  .aboutContent h3 { font-size: 1.2rem; }
+  .aboutContent p { font-size: 0.95rem; }
+  .placementsTitle { font-size: 2rem; }
+  .placementsText p { font-size: 0.95rem; }
+  .partnersGrid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .aboutTextContainer {
+    padding-bottom: 60px; /* Less space before wave */
+  }
+  .placementsSectionWrapper {
+    padding-top: 100px; /* Adjust wave overlap for mobile */
+  }
+}

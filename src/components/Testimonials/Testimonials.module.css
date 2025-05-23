@@ -1,0 +1,90 @@
+.testimonialsSection {
+  background-color: #f9f9f9; /* Light grey background */
+  color: var(--dark-text);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark-text); /* Darker text on light bg */
+  margin-bottom: 50px;
+  line-height: 1.3;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.testimonialCard {
+  background-color: #fff;
+  border-radius: var(--border-radius-lg);
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column; /* Default for no image */
+  align-items: center; /* Center content */
+  text-align: center;
+}
+
+/* If image is present, adjust layout */
+.testimonialCard .userImage,
+.testimonialCard .userImagePlaceholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid var(--primary-yellow);
+}
+.userImagePlaceholder { /* Placeholder styling */
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.cardContent h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.rating {
+  margin-bottom: 15px;
+}
+
+.rating svg {
+  margin: 0 2px;
+}
+
+.quote {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  flex-grow: 1; /* Makes quotes take up space to align buttons */
+}
+
+.designation {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.designation strong {
+  color: #444;
+}
+
+/* For cards that might have image on side like Shruti Jain's example */
+/* You might need different card components or conditional styling for that */
+/* This basic grid assumes all cards are similar */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}

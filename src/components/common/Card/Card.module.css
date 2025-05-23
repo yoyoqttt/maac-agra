@@ -1,0 +1,17 @@
+/* src/components/common/Card/Card.module.css */
+.card {
+  background-color: #fff; /* Or a variable if you want to theme it */
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Consistent padding */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Can add hover effect, or the parent can control it */
+}
+
+.card:hover {
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Add more specific styles if you have different card variants */
+/* E.g., .card.featured { ... }  */

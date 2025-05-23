@@ -1,0 +1,83 @@
+{
+  "categories": [
+    "All",
+    "Digital Design",
+    "3D Design & Animation",
+    "Visual Effects",
+    "Events Pictures"
+  ],
+  "items": [
+    {
+      "id": "showcase-01",
+      "title": "Cybernetic Knight",
+      "category": "3D Design & Animation",
+      "image": "../src/data/3D/3d (1).webp",
+      "studentName": "Rohan Mehra",
+      "description": "A detailed character model showcasing hard-surface modeling and texturing techniques."
+    },
+     {
+      "id": "showcase-02",
+      "title": "Cybernetic Knight",
+      "category": "3D Design & Animation",
+      "image": "../src/data/3D/3d (2).webp",
+      "studentName": "Rohan Mehra",
+      "description": "A detailed character model showcasing hard-surface modeling and texturing techniques."
+    },
+     {
+      "id": "showcase-03",
+      "title": "1",
+      "category": "3D Design & Animation",
+      "image": "../src/data/3D/3d (3).webp",
+      "studentName": "Rohan Mehra",
+      "description": "A detailed character model showcasing hard-surface modeling and texturing techniques."
+    },
+     {
+      "id": "showcase-04",
+      "title": "Cybernetic Knight",
+      "category": "3D Design & Animation",
+      "image": "./3D/3d (4).webp",
+      "studentName": "Rohan Mehra",
+      "description": "A detailed character model showcasing hard-surface modeling and texturing techniques."
+    },
+    {
+      "id": "showcase-05",
+      "title": "Forest Spirit",
+      "category": "Digital Design",
+      "image": "/assets/images/showcase/forest-spirit-art.jpg",
+      "studentName": "Priya Singh",
+      "description": "A vibrant digital painting exploring fantasy themes and atmospheric lighting."
+    },
+    {
+      "id": "showcase-06",
+      "title": "City Destruction VFX",
+      "category": "Visual Effects",
+      "image": "/assets/images/showcase/city-destruction-vfx.jpg",
+      "studentName": "Aarav Patel",
+      "description": "A dynamic VFX shot demonstrating simulation and compositing skills."
+    },
+    {
+      "id": "showcase-07",
+      "title": "MAAC Annual Event",
+      "category": "Events Pictures",
+      "image": "/assets/images/showcase/maac-event-2023.jpg",
+      "studentName": "MAAC Agra Team",
+      "description": "Glimpses from our vibrant annual student showcase and industry meet."
+    },
+    {
+      "id": "showcase-08",
+      "title": "Low Poly World",
+      "category": "3D Design & Animation",
+      "image": "/assets/images/showcase/low-poly-world.jpg",
+      "studentName": "Sneha Gupta",
+      "description": "A charming low-poly scene created for a game concept."
+    },
+    {
+      "id": "showcase-09",
+      "title": "Abstract UI Concept",
+      "category": "Digital Design",
+      "image": "/assets/images/showcase/abstract-ui.jpg",
+      "studentName": "Vikram Kumar",
+      "description": "A modern and abstract UI concept for a mobile application."
+    }
+  ]
+}

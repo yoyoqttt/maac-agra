@@ -1,0 +1,38 @@
+[
+  {
+    "id": "testimonial-01",
+    "name": "Divyansi Pourush",
+    "image": "https://www.maacagra.com/img/Work/w-2.png",
+    "quote": "I'd like to thank MAAC Agra for the knowledge that I obtained during my studies. When I first came to this institution I was absolutely clueless about the creative industry... Now, after completion of my course, my vision is clear and I have gained the proper knowledge pertaining to my field. It was a great learning time with this institute. I really enjoyed studying here.",
+    "rating": 5,
+    "designation": "Jobaaj.com",
+    "location": "Agra"
+  },
+  {
+    "id": "testimonial-02",
+    "name": "Shruti Jain",
+    "image": "https://www.maacagra.com/img/n-testimonial-img1.jpeg",
+    "quote": "Thank you so much MAAC Agra and all the faculty for such great knowledge & experience. I had an amazing experience being a MAAC student. The guidance and support are exceptional.",
+    "rating": 5,
+    "designation": "Graphics Designer",
+    "location": "Chanderpur Group Haryana"
+  },
+  {
+    "id": "testimonial-03",
+    "name": "Gaurav Sharma",
+    "image": null,
+    "quote": "MAAC Agra has been a great institute for my career. The mentors here push you to your strength. The faculties at MAAC Agra provide thorough knowledge. It's been a great experience being a part of the MAAC Agra family. Highly recommended!",
+    "rating": 5,
+    "designation": "Graphic Designer",
+    "location": "Inno-designs Designation"
+  },
+  {
+    "id": "testimonial-04",
+    "name": "Anjali Verma",
+    "image": "/assets/images/testimonials/user-anjali.jpg",
+    "quote": "The hands-on projects and industry-relevant curriculum at MAAC Agra truly prepared me for the professional world. The faculty is incredibly knowledgeable and supportive.",
+    "rating": 4,
+    "designation": "Jr. VFX Artist",
+    "location": "Mumbai Studio"
+  }
+]

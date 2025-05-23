@@ -1,0 +1,84 @@
+.container {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.stepsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.stepRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.stepLeft {
+  text-align: center;
+}
+
+.stepNumber {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #facc15;
+}
+
+.stepTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.stepDescription {
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 0.3rem;
+}
+
+.stepRight {
+  display: flex;
+  justify-content: center;
+}
+
+.stepImage {
+  height: 10rem;
+  max-width: 100%;
+}
+
+/* Responsive horizontal layout for tablets/desktops */
+@media (min-width: 768px) {
+  .stepRow {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .stepLeft {
+    width: 50%;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .stepRight {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .stepDescription {
+    margin: 0;
+  }
+}

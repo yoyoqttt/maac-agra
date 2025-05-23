@@ -1,0 +1,129 @@
+.footer {
+  background-color: #111; /* Very dark */
+  color: #bbb;
+  padding-top: 60px;
+  font-size: 0.95rem;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footerColumn h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+.footerColumn h4::after { /* Underline effect */
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-yellow);
+}
+
+
+.footerLogoText {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-yellow);
+  margin-bottom: 15px;
+}
+/*
+.footerLogo {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+*/
+
+.footerColumn p {
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerColumn ul li {
+  margin-bottom: 10px;
+}
+
+.footerColumn ul li a {
+  color: #bbb;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footerColumn ul li a:hover {
+  color: var(--primary-yellow);
+  padding-left: 5px;
+}
+
+.footerColumn svg { /* Icons in contact info */
+  margin-right: 8px;
+  color: var(--primary-yellow);
+}
+
+.socialIcons {
+  margin-top: 20px;
+}
+
+.socialIcons a {
+  color: #bbb;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: var(--primary-yellow);
+}
+
+.mapSection {
+  width: 100%;
+  margin-bottom: -5px; /* To remove gap if iframe has margin */
+}
+
+.footerBottom {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+.footerBottom p {
+  margin: 0;
+  color: #999;
+}
+
+.nimactLink a {
+  color: var(--primary-yellow);
+  font-weight: bold;
+}
+.nimactLink a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footerTop {
+    grid-template-columns: 1fr; /* Stack columns on mobile */
+    text-align: center;
+  }
+  .footerColumn h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footerColumn ul li a:hover {
+    padding-left: 0; /* No padding shift on mobile hover */
+  }
+  .socialIcons {
+    justify-content: center;
+  }
+}

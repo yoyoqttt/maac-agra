@@ -1,0 +1,77 @@
+.infoBanner {
+  background-color: #1e1e1e; /* Dark background as in the image */
+  color: var(--light-text);
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.bannerContent {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  align-items: center;
+  gap: 30px; /* Space between left and right content */
+}
+
+.leftContent {
+  flex: 1; /* Takes up available space */
+  min-width: 300px; /* Prevents it from getting too small */
+}
+
+.leftContent h2 {
+  font-size: 2rem; /* Adjust as needed */
+  line-height: 1.4;
+  font-weight: 700;
+  color: #ffffff; /* White text */
+}
+
+.highlight {
+  color: var(--primary-yellow); /* Yellow highlight for "MAAC Agra" */
+  display: block; /* Makes it stand out on its own line if needed or just for styling */
+  margin-bottom: 5px; /* Small space if it's on its own line */
+}
+
+.rightContent {
+  flex: 1.5; /* Takes up more space, or adjust ratio as needed */
+  min-width: 300px;
+}
+
+.rightContent p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--medium-text); /* Slightly lighter than main dark bg text */
+  margin-bottom: 15px;
+}
+
+.rightContent p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .bannerContent {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center text when stacked */
+  }
+
+  .leftContent h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px; /* Space below the heading when stacked */
+  }
+
+  .highlight {
+    display: inline; /* Keep it inline on smaller screens if preferred */
+    margin-bottom: 0;
+  }
+
+  .rightContent p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .infoBanner {
+    padding: 40px 0;
+  }
+  .leftContent h2 {
+    font-size: 1.6rem;
+  }
+}

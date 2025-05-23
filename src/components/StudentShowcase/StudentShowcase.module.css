@@ -1,0 +1,200 @@
+.showcaseSection {
+  padding-top: 0; /* The .headerBackground handles its own top padding */
+  background-color: #fff; /* Light background for the main gallery area below the header */
+  color: var(--dark-text); /* Text color for content on the light background */
+  position: relative; /* For stacking context if needed */
+  overflow: hidden; /* Good practice for sections */
+}
+
+.headerBackground {
+  background-color: var(--accent-green-light, #e6ffe6); /* Light green, use variable from variables.css or fallback */
+  padding: 60px 0 120px 0; /* Top/Bottom padding. Extra bottom padding allows tabs to overlap nicely */
+  margin-bottom: -80px; /* Negative margin to pull the filter tabs up over this section's bottom part */
+  /* Paper cutout effect using clip-path. For more complex shapes, an SVG mask or overlay is better. */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  text-align: center;
+  position: relative; /* For z-indexing if other elements need to go over/under */
+  /* z-index: 10000; Base z-index for this section */
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  color: var(--accent-green-dark, #ffffff); /* Dark Green, use variable or fallback */
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--dark-text, #020000);
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.7;
+}
+
+.filterTabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
+  gap: 10px;
+  margin-bottom: 40px;
+  background-color: #320a0a; /* White background for the tab container */
+  padding: 20px 15px; /* Increased padding for a bit more space */
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md, 0 2px 10px rgba(0,0,0,0.1)); /* Use variable or fallback */
+  position: relative; /* To ensure it sits correctly due to the negative margin of .headerBackground */
+  /* z-index: 1000000; Above .headerBackground's tail */
+}
+
+.tabButton {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: #ffffff; /* Light base for tab button */
+  color: var(--dark-text);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.tabButton.active,
+.tabButton:hover {
+  background-color: var(--primary-yellow);
+  color: var(--dark-text);
+  border-color: var(--primary-yellow); /* Match border to background on active/hover */
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+  gap: 25px; /* Increased gap slightly */
+  padding-top: 10px; /* Small space above the grid after tabs */
+}
+
+.galleryItem {
+  position: relative; /* For positioning the overlay */
+  overflow: hidden; /* To clip the image zoom and overlay */
+  border-radius: var(--border-radius-lg); /* Slightly larger radius */
+  box-shadow: var(--shadow-sm, 0 4px 8px rgba(0,0,0,0.1));
+  cursor: pointer;
+  background-color: #f0f0f0; /* Fallback bg while image loads */
+  aspect-ratio: 4 / 3; /* Maintain aspect ratio, adjust as needed for your images */
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%; /* Fill the container due to aspect-ratio on parent */
+  object-fit: cover; /* Ensures image covers the area, might crop */
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth zoom transition */
+}
+
+/* Placeholder for images if needed (though loading="lazy" and aspect-ratio help) */
+.itemImagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-style: italic;
+  border-radius: var(--border-radius-lg); /* Match item */
+}
+
+.itemOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0) 100%); /* Darker gradient */
+  color: white;
+  padding: 25px 20px 20px; /* More padding */
+  transform: translateY(101%); /* Start fully hidden below */
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.35s ease;
+}
+
+.galleryItem:hover img {
+  transform: scale(1.08); /* Slightly increased zoom on hover */
+}
+
+.galleryItem:hover .itemOverlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.itemOverlay h3 {
+  margin: 0 0 8px 0; /* More space below title */
+  font-size: 1.25rem; /* Slightly larger */
+  font-weight: 600;
+  color: #fff;
+}
+
+.itemOverlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e0e0e0; /* Lighter text for overlay paragraph */
+  line-height: 1.4;
+}
+
+/* Message for no items found */
+.noItemsMessage {
+  grid-column: 1 / -1; /* Span all columns if in a grid */
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--medium-text);
+  font-style: italic;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .headerBackground {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); /* Adjusted clip-path for mobile */
+    padding: 40px 0 100px 0; /* Adjust padding for mobile */
+    margin-bottom: -70px; /* Adjust overlap for mobile */
+  }
+  .mainTitle {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .filterTabs {
+    gap: 8px; /* Smaller gap for tabs */
+    padding: 15px 10px;
+  }
+  .tabButton {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  .galleryGrid {
+    gap: 15px; /* Smaller gap for gallery items */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust item size */
+  }
+  .galleryItem {
+    aspect-ratio: 16 / 10; /* May need different aspect ratio on mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .headerBackground {
+    padding: 30px 0 80px 0;
+    margin-bottom: -50px;
+  }
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  .galleryGrid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+  .galleryItem {
+    aspect-ratio: 4 / 3; /* Back to a more standard aspect ratio */
+    /* Or you might let height be auto */
+  }
+}

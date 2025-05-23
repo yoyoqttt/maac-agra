@@ -11,11 +11,11 @@ import styles from './PlacementPartners.module.css';
 
 const partners = [
   { name: 'Technicolor', logo: 'https://www.maacagra.com/img/recruiters-logo/logo2.webp' /* Replace with actual import */ },
-  { name: 'MPC', logo: 'mpc-logo.png' },
-  { name: 'DNEG', logo: 'dneg-logo.png' },
-  { name: 'Prana Studios (was Z)', logo: 'pixmyfilm-logo.png' /* Adjust if needed */ },
-  { name: 'Netflix', logo: 'netflix-logo.png' },
-  { name: 'Red Chillies VFX', logo: 'redchillies-logo.png' },
+  { name: 'MPC', logo: 'https://www.maacagra.com/img/recruiters-logo/logo8.webp' },
+  { name: 'DNEG', logo: 'https://www.maacagra.com/img/recruiters-logo/logo9.webp' },
+  { name: 'Prana Studios (was Z)', logo: 'https://www.maacagra.com/img/recruiters-logo/logo13.webp' /* Adjust if needed */ },
+  { name: 'Netflix', logo: 'https://www.maacagra.com/img/recruiters-logo/logo22.webp' },
+  { name: 'Red Chillies VFX', logo: 'https://www.maacagra.com/img/recruiters-logo/logo5.webp' },
 ];
 
 const PlacementPartners = () => {

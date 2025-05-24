@@ -12,7 +12,11 @@ import ScrollToTopButton from './components/common/ScrollToTopButton/ScrollToTop
 
 // Page Components
 import HomePage from '../src/pages/HomePage';
-// import AboutPage from '../src/pages/AboutPage';
+
+import Ddesign from '../src/pages/3Ddesign';
+
+import  PlacementPage from '../src/pages/PlacementPage';
+import Contact from '../src/pages/Contact';
 // import CoursesPage from '../src/pages/CoursesPage';         // Main courses listing page
 // import CourseDetailPage from '../src/pages/CourseDetailPage'; // For individual course details
 import StudentLifePage from '../src/pages/StudentLifePage';   // Renamed from "Student Page" for clarity
@@ -94,6 +98,10 @@ function App() {
 
             <Route path="/student-life" element={<StudentLifePage />} />
             <Route path="/showcase" element={<ShowcasePage />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/3Ddesign" element={<Ddesign />} />
+            
+            <Route path="/place" element={< PlacementPage />} />
              <Route path="*" element={< PageNot/>} />
 
             {/*

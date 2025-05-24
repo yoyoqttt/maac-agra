@@ -27,7 +27,7 @@ const Navbar = ({ onApplyNowClick }) => {
             <span className={styles.dropdownToggle}>Courses ▾</span>
             {coursesOpen && (
               <ul className={styles.dropdownMenu}>
-                <li><a href="/courses/3d">3D</a></li>
+                <li><a href="/3Ddesign">3D</a></li>
                 <li><a href="/courses/vfx">VFX</a></li>
                 <li><a href="/courses/gaming">Gaming</a></li>
                 <li><a href="/courses/graphic">Graphic</a></li>
@@ -35,9 +35,9 @@ const Navbar = ({ onApplyNowClick }) => {
             )}
           </li>
           <li><a href="/showcase">Showcase</a></li>
-          <li><a href="/placements">Placements</a></li>
+          <li><a href="/place">Placements</a></li>
           <li className={styles.applyNowMobile}>
-            <Button onClick={onApplyNowClick} variant="primary">Apply Now</Button>
+            <a href="/placements"><Button onClick={onApplyNowClick} variant="primary">Apply Now</Button></a>
           </li>
         </ul>
 

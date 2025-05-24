@@ -1,0 +1,33 @@
+.banner-bg {
+  background: linear-gradient(rgba(40, 10, 60, 0.85), rgba(40, 10, 60, 0.85)), 
+    url('https://img.freepik.com/free-photo/three-dimensional-tree-with-foliage_23-2150928865.jpg?ga=GA1.1.356431715.1720561986&semt=ais_hybrid&w=740') center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-content {
+  color: #fff;
+  max-width: 800px;
+  text-align: left;
+  padding: 40px 32px;
+  background: rgba(30, 10, 50, 0.45);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.banner-content p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.6;
+}

@@ -1,0 +1,33 @@
+.featured-banner {
+  background: #f5f5f5;
+  width: 100%;
+}
+
+.featured-banner__image {
+  background: url('https://maacnoida.com/img/products/97b6c260-01a8-40f5-9752-c6ed91348634.webp') center/cover no-repeat;
+  height: 120px;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.featured-banner__content {
+  padding: 32px 5vw 24px 5vw;
+}
+
+.featured-banner__content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #232a36;
+}
+
+@media (max-width: 600px) {
+  .featured-banner__image {
+    height: 70px;
+  }
+  .featured-banner__content {
+    padding: 18px 3vw 10px 3vw;
+  }
+  .featured-banner__content h2 {
+    font-size: 1.3rem;
+  }
+}

@@ -35,10 +35,10 @@ const Navbar = ({ onApplyNowClick }) => {
               </ul>
             )}
           </li>
-          <li><Link to="/showcase">Showcase</Link></li>
-          <li><Link to="/place">Placements</Link></li>
+          <li><a href="/showcase">Showcase</a></li>
+          <li><a href="/place">Placements</a></li>
           <li className={styles.applyNowMobile}>
-            <Link to="/placements"><Button onClick={onApplyNowClick} variant="primary">Apply Now</Button></Link>
+            <a href="/placements"><Button onClick={onApplyNowClick} variant="primary">Apply Now</Button></a>
           </li>
         </ul>
 

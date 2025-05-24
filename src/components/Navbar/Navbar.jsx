@@ -14,7 +14,7 @@ const Navbar = ({ onApplyNowClick }) => {
     <nav className={styles.navbar}>
       <div className={`${styles.navContainer} container`}>
         <div className={styles.logo}>
-          <Link to="/"><img src={logo} alt="MAAC AgrLink Logo" /></Link>
+          <a href="/"><img src={logo} alt="MAAC Agra Logo" /></a>
         </div>
 
         <div className={styles.hamburger} onClick={toggleMenu}>
@@ -22,16 +22,16 @@ const Navbar = ({ onApplyNowClick }) => {
         </div>
 
         <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ''}`}>
-          <li><Link to="/">Home</Link></li>
+          <li><a href="/">Home</a></li>
           <li onClick={toggleCourses}>
             <span className={styles.dropdownToggle}>Courses ▾</span>
             {coursesOpen && (
               <ul className={styles.dropdownMenu}>
-                <li><Link to="/3Ddesign">3D</Link></li>
-                <li><Link to="/courses/vfx">VFX</Link></li>
-                <li><Link to="/courses/gaming">Gaming</Link></li>
-                <li><Link to="/courses/graphic">Graphic</Link></li>
-                <li><Link to="/multimedia"> Multimedia</Link></li>
+                <li><a href="/3Ddesign">3D</a></li>
+                <li><a href="/courses/vfx">VFX</a></li>
+                <li><a href="/courses/gaming">Gaming</a></li>
+                <li><a href="/courses/graphic">Graphic</a></li>
+                <li><a href="/multimedia"> Multimedia</a></li>
               </ul>
             )}
           </li>

@@ -1,0 +1,14 @@
+.courses {
+  background: url(' https://img.freepik.com/free-photo/film-maker-editing-movie-montage-with-virtual-reality-glasses-using-multimedia-production-software-create-footage-edit-video-with-color-grading-visual-effects-working-with-vr-goggles_482257-50388.jpg?ga=GA1.1.356431715.1720561986&semt=ais_hybrid&w=740') center/cover no-repeat;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  height: 100vh;
+}
+.courses h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.courses p {
+  font-size: 1.1rem;
+}

@@ -31,6 +31,7 @@ const Navbar = ({ onApplyNowClick }) => {
                 <li><a href="/courses/vfx">VFX</a></li>
                 <li><a href="/courses/gaming">Gaming</a></li>
                 <li><a href="/courses/graphic">Graphic</a></li>
+                <li><a href="/multimedia"> Multimedia</a></li>
               </ul>
             )}
           </li>

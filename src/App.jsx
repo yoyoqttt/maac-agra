@@ -20,7 +20,8 @@ import Contact from '../src/pages/Contact';
 // import CoursesPage from '../src/pages/CoursesPage';         // Main courses listing page
 // import CourseDetailPage from '../src/pages/CourseDetailPage'; // For individual course details
 import StudentLifePage from '../src/pages/StudentLifePage';   // Renamed from "Student Page" for clarity
-import ShowcasePage from '../src/pages/ShowcasePage';       // A dedicated page for all student work/showcase
+import ShowcasePage from '../src/pages/ShowcasePage'; 
+import Multimedia from '../src/pages/Multimedia';        // A dedicated page for all student work/showcase
 // import NotFoundPage from './pages/NotFoundPage'; // You can create this later
 
 // Register GSAP Plugins
@@ -100,7 +101,7 @@ function App() {
             <Route path="/showcase" element={<ShowcasePage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/3Ddesign" element={<Ddesign />} />
-            
+                   <Route path="/multimedia" element={<Multimedia />} />
             <Route path="/place" element={< PlacementPage />} />
              <Route path="*" element={< PageNot/>} />
 

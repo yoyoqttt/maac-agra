@@ -87,6 +87,7 @@ function App() {
   return (
     <Router>
       <div ref={appRef} className="app-wrapper"> {/* Optional wrapper */}
+        
         {/* <ScrollToTopOnRouteChange /> Component to handle scrolling to top on navigation */}
         <Navbar  /><br/>
         {/* <main className="main-content"> Semantic main tag for page content */}

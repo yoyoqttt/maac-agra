@@ -1,0 +1,67 @@
+.hero {
+  background: radial-gradient(circle at center, #111 40%, #000 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.blobContainer {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.blobVideoWrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+  clip-path: path('M453,31.5Q447,63,446,94Q445,125,449,161Q453,197,443,230.5Q433,264,410,291.5Q387,319,354,333.5Q321,348,286.5,360Q252,372,220,359.5Q188,347,157.5,332.5Q127,318,101,295.5Q75,273,58.5,245Q42,217,30,185Q18,153,27,121.5Q36,90,56,63Q76,36,110,26Q144,16,181,15.5Q218,15,252.5,6.5Q287,0,318.5,13.5Q350,27,382,37.5Q414,48,453,31.5Z');
+  overflow: hidden;
+}
+
+.blobVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -130%);
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFD700;
+  margin-top: 2rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.yellowButton {
+  background-color: #FFD700;
+  color: black;
+  padding: 14px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.yellowButton:hover {
+  background-color: #e5be00;
+}

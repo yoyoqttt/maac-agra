@@ -1,32 +1,68 @@
-.overlay {
+/* Fullscreen Overlay */
+.popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  height: 50%;
+  width: 50%;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 9999;
 }
 
-.popup {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
+/* Centered Box */
+.popup-box {
   position: relative;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  background-color: #0e1226;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 380px;
+  color: white;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
-.closeButton {
+/* Close button top-right */
+.popup-close {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 20px;
-  background: transparent;
+  top: 12px;
+  right: 16px;
+  background: none;
   border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Subtitle */
+.popup-subtitle {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+.popup-box input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #262b40;
+  color: white;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.popup-submit {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #009eff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 12px;
   cursor: pointer;
 }

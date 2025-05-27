@@ -12,7 +12,7 @@ const steps = [
     number: "2",
     title: "Enroll",
     description: "Hurray! You are a student at maac!",
-    image: "/images/enroll.png",
+    image: "https://www.maacagra.com/img/boy-exploding-party-popper.png",
     // import myImage from '../../assets/path-to-your-image.jpg';
 
   },
@@ -20,7 +20,25 @@ const steps = [
     number: "3",
     title: "Attend",
     description: "Regular classes and practice with the best industrial trainers",
-    image: "/images/attend.png",
+    image: "https://www.maacagra.com/img/create-file.png",
+  },
+    {
+    number: "4",
+    title: "Participate",
+    description: "Regular classes and practice with the best industrial trainers",
+    image: "https://www.maacagra.com/img/businessman-with-financial-idea.png",
+  },
+    {
+    number: "5",
+    title: "Submit",
+    description: "Regular classes and practice with the best industrial trainers",
+    image: "https://www.maacagra.com/img/approved-checklist.png",
+  },
+    {
+    number: "6",
+    title: "Prepare",
+    description: "Regular classes and practice with the best industrial trainers",
+    image: "https://www.maacagra.com/img/business-startup.png",
   },
 ];
 
